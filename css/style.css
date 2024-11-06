@@ -1,0 +1,347 @@
+* {
+  font-family: "Reenie Beanie", cursive; /* 모든 요소에 폰트 적용 */
+}
+
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.background {
+  /*background-color: red;*/
+  width: 1370px;
+  height: 640px;
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: relative;
+  background-image: url("../img/background.jpg"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  overflow: hidden;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-185px); /* 이동할 거리 */
+  }
+}
+
+.Title {
+  width: 497.4px;
+  height: 196.16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* 클릭 가능하다는 것을 나타내는 커서 스타일 */
+  background-image: url("../img/Title.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  transition: transform 0.5s; /* 부드러운 애니메이션을 위한 트랜지션 */
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px); /* 아래로 이동할 거리 */
+    opacity: 0; /* 사라지는 효과 */
+  }
+}
+
+.Clickthetitle {
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 450px;
+  justify-content: center;
+  align-items: center;
+  color: #30313b; /* 텍스트 색상 */
+  font-size: 45px; /* 글자 크기 */
+  line-height: 40px; /* 수직 중앙 정렬을 위한 line-height 설정 */
+  z-index: 1; /* z-index 추가하여 보이게 설정 */
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.directer {
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 235px; /* 원하는 위치 설정 (예시) */
+  justify-content: center;
+  align-items: center;
+  color: #30313b; /* 텍스트 색상 */
+  font-size: 30px; /* 글자 크기 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+}
+
+.description-container {
+  /*background-color: rgba(0, 0, 0, 0); */
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 270px; /* 원하는 위치 설정 (예시) */
+  align-items: center;
+  width: 657px; /* 원하는 너비 설정 */
+  padding: 1px; /* 여백 설정 */
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+}
+
+.description {
+  color: #30313b; /* 텍스트 색상 */
+  font-size: 30px; /* 글자 크기 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  opacity: 1;
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.polaroid1 {
+  /*background-color: green;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  width: 206.18px;
+  height: 292.33px;
+  background-image: url("../img/jimP.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+  animation: moveUpPolaroid 0.5s forwards;
+}
+
+.polaroid2 {
+  /*background-color: green;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  width: 206.18px;
+  height: 292.33px;
+  background-image: url("../img/kateP.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+  animation: moveUpPolaroid 0.5s forwards;
+}
+
+@keyframes moveUpPolaroid1 {
+  0% {
+    top: 350px; /* 초기 위치 */
+    left: 0px; /* 초기 위치 */
+  }
+  100% {
+    top: 350px; /* 최종 위치 */
+    left: 400px; /* 최종 위치 */
+  }
+}
+
+@keyframes moveUpPolaroid2 {
+  0% {
+    top: 350px; /* 초기 위치 */
+    right: 0px; /* 초기 위치 */
+  }
+  100% {
+    top: 350px; /* 최종 위치 */
+    right: 400px; /* 최종 위치 */
+  }
+}
+
+.polaroid1Pic {
+  /*background-color: purple;*/
+  top: 350px; /* 최종 위치 */
+  left: 400px;
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  width: 206.18px;
+  height: 292.33px;
+  background-image: url("../img/jimPTrue.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+}
+
+.polaroid2Pic {
+  /*background-color: purple;*/
+  top: 350px; /* 최종 위치 */
+  right: 400px; /* 최종 위치 */
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  width: 206.18px;
+  height: 292.33px;
+  background-image: url("../img/katePTrue.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.film1 {
+  /* background-color: yellow;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 30px;
+  left: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/FilmP1.jpg"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+  transform: rotate(-5deg); /* 기울기 설정 */
+  animation: slideInfilm 0.5s forwards;
+  z-index: 1;
+}
+
+@keyframes slideInFilm1 {
+  0% {
+    transform: translate(120px, 100%) rotate(-5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0, 0) rotate(-5deg); /* 원래 위치로 */
+    opacity: 1; /* 보이도록 설정 */
+  }
+}
+
+.film2 {
+  /*background-color: yellow;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  bottom: 60px;
+  right: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/FilmP2.jpg"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 0.5s; /* 부드러운 페이드 인 효과 */
+  transform: rotate(5deg); /* 기울기 설정 */
+  animation: slideInFilm2 0.5s forwards; /* 애니메이션 추가 */
+  z-index: 1;
+}
+
+@keyframes slideInFilm2 {
+  0% {
+    transform: translateY(-100%) rotate(5deg); /* 위에서 시작 */
+    opacity: 1; /* 초기 상태에서 보이지 않도록 설정 */
+  }
+  100% {
+    transform: translateY(0) rotate(5deg); /* 원래 위치로 */
+    opacity: 1; /* 보이도록 설정 */
+  }
+}
+
+.button-container {
+  /*background-color: aliceblue;*/
+  background-image: url("../img/buttoncontaner.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 500px; /* 원하는 위치 설정 (예시) */
+  right: 20px;
+  align-items: center;
+  width: 179.59px; /* 원하는 너비 설정 */
+  height: 109.38px; /* 높이 설정 */
+  padding: 4px; /* 여백 설정 */
+  display: flex; /* Flexbox 사용 */
+  animation: slideUp 0.5s forwards; /* 두 애니메이션 적용 */
+  z-index: 7;
+}
+
+.button {
+  color: #30313b; /* 텍스트 색상 */
+  font-size: 25px; /* 글자 크기 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  opacity: 1; /* 초기 상태에서 보이도록 설정 */
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  z-index: 8;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* 초기 위치는 아래 */
+    opacity: 1; /* 초기 상태에서 보이지 않도록 설정 */
+  }
+  100% {
+    transform: translateY(0); /* 최종 위치는 원래 위치 */
+    opacity: 1; /* 보이도록 설정 */
+  }
+}
+
+.FilmP12 {
+  /*background-color: black;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 30px;
+  left: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/FilmP12.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 5s; /* 5초 동안 서서히 나타나도록 설정 */
+  transform: rotate(-5deg); /* 기울기 설정 */
+  display: none; /* 초기 상태에서 숨김 */
+  z-index: 3;
+}
+
+.FilmP22 {
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  bottom: 60px;
+  right: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/FilmP22.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 5s; /* 5초 동안 서서히 나타나도록 설정 */
+  transform: rotate(5deg); /* 기울기 설정 */
+  display: none; /* 초기 상태에서 숨김 */
+  z-index: 3;
+}
+
+.Efilm1 {
+  /*background-color: black;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  top: 30px;
+  left: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/emptyFilm1.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 5s; /* 5초 동안 서서히 나타나도록 설정 */
+  transform: rotate(-5deg); /* 기울기 설정 */
+  display: none; /* 초기 상태에서 숨김 */
+  z-index: 5;
+}
+
+.Efilm2 {
+  /*background-color: black;*/
+  position: absolute; /* 빨간 상자를 기준으로 위치 설정 */
+  bottom: 60px;
+  right: 60px;
+  width: 262.46px; /* 너비 설정 */
+  height: 613.84px; /* 높이 설정 */
+  background-image: url("../img/emptyFilm2.png"); /* 이미지 경로 */
+  background-size: 100% 100%;
+  background-position: center; /* 배경 이미지 중앙 정렬 */
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
+  transition: opacity 5s; /* 5초 동안 서서히 나타나도록 설정 */
+  transform: rotate(5deg); /* 기울기 설정 */
+  display: none; /* 초기 상태에서 숨김 */
+  z-index: 5;
+}
